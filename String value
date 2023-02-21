@@ -1,0 +1,50 @@
+QUESTION:
+
+C programming has several in-built functions to perform input and output tasks.
+
+Two commonly used functions for I/O (Input/Output) are System.out.println() and System.in().
+
+Write a program to get the string as input and print it.
+
+The System.in() function reads formatted input from the keyboard. When the user enters a string (i.e) char array, it is stored in variable testString.
+
+Format string %s is used in case of string which is an array of character types.
+
+Note the '&' sign before testString is not needed, the value will be stored starting from the base address.
+
+
+
+NOTE: Bold letters or words are Input and rest are output statements.
+
+
+
+Sample Input - 1:
+
+Programmer
+
+Sample Output - 1:
+
+Programmer
+
+
+Sample Input - 2:
+
+897
+
+Sample Output - 2:
+
+897
+
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        String str;
+        Scanner obj= new Scanner(System.in);
+        str=obj.next();
+        System.out.printf("%s",str);
+    }
+}
