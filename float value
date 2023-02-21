@@ -1,0 +1,51 @@
+QUESTION:
+
+C programming has several in-built functions to perform input and output tasks.
+
+Two commonly used functions for I/O (Input/Output) are System.out.println() and System.in().
+
+Write a program to get float as input and print it.
+
+The System.in() function reads formatted input from the keyboard. When the user enters a float, it is stored in variable testFloat.
+
+Format string %f is used in case of float types.
+
+Note the '&' sign before testFloat; &testFloat gets the address of testFloat and the value is stored in that address.
+
+Use '%.2f' in the System.out.println() to display float value with 2 precisions.
+
+
+
+NOTE: Bold letters or words are Input and rest are output statements.
+
+
+
+Sample Input - 1:
+
+56.2425
+
+Sample Output - 1:
+
+56.24
+
+Sample Input - 2:
+
+92.00
+
+Sample Output - 2:
+
+92.00
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        float a;
+        Scanner obj =new Scanner(System.in);
+        a=obj.nextFloat();
+        System.out.printf("%.2f",a);
+        
+    }
+}
