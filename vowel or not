@@ -1,0 +1,49 @@
+QUESTION:
+
+Write a program to check whether the given character is vowel or consonant.
+
+Input format:
+
+The input consist of a character
+
+Output format:
+
+The output consists of a below-given string 
+
+“Vowel” / “Consonant” / “Not an alphabet”
+
+Sample Input:
+e
+
+Sample Output:
+
+Vowel
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        char a;
+        Scanner obj=new Scanner(System.in);
+        a=obj.next().charAt(0);
+        int asciivalue=(int)a;
+        if((asciivalue>=65&&asciivalue<=90)||(asciivalue>=97&&asciivalue<=122))
+        {
+            switch(a)
+            {
+                case 'a':System.out.printf("Vowel");break;
+                case 'e':System.out.printf("Vowel");break;
+                case 'i':System.out.printf("Vowel");break;
+                case 'o':System.out.printf("Vowel");break;
+                case 'u':System.out.printf("Vowel");break;
+                default:System.out.printf("Consonant");
+            }
+        }
+        else
+        {
+            System.out.println("Not an alphabet");
+        }
+    }
+}
