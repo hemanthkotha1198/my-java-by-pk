@@ -1,0 +1,34 @@
+QUESTION:
+
+ASCII - American Standard Code for Information Interchange.
+
+Write a program to get a character as input and print it's ASCII value.
+
+When a character is entered, the character itself is not stored. Instead, a numeric value(ASCII value) is stored.
+
+And when we displayed that value using "%c" text format, the entered character is displayed.
+
+NOTE: Bold letters or words are Input and rest are output statements.
+
+
+
+Sample Input :
+
+g
+
+Sample Output:
+
+103
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        char a;
+        Scanner obj = new Scanner(System.in);
+        a=obj.next().charAt(0);
+        int asciivalue=(int)a;
+        System.out.println(asciivalue);
+    }
+}
