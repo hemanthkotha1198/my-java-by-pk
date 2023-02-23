@@ -1,0 +1,47 @@
+QUESTION:
+There are 3 labs in the CSE department are L1, L2, and L3 with a seating capacity of x, y, and z. A single lab needs to be allocated to a class of 'n' students. How many of the 3 labs can accommodate 'n' students?
+Input format:
+Input consists of 4 integers
+The first input denotes the seating capacity of L1(x)
+The second input denotes the seating capacity of L2Yes
+The third input denotes the seating capacity of L3(z)
+The fourth input denotes the number of studentsNo
+Output format:
+Print the number of labs which can accommodate the 'n' number of students
+Refer the Sample output for formatting
+Sample Input:
+30
+40
+20
+25
+Sample Output:
+2 
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+     int num1,num2,num3,strength,count=0;
+		Scanner obj=new Scanner(System.in);
+		num1=obj.nextInt();
+		num2=obj.nextInt();
+		num3=obj.nextInt();
+		strength=obj.nextInt();
+		if(num1>strength)
+		{
+		    count++;
+		   
+		}
+		if((num2>strength))
+		    {
+		        count++;
+		    }
+		 if((num3>strength))
+		    {
+		        count++;
+		    }   
+		    System.out.println(count);
+    }
+}
