@@ -1,0 +1,22 @@
+Question
+number Series==1_2_3_4_5_6
+
+package training_java;
+import java.util.Scanner;
+public class Num_series {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num=1,range;
+		Scanner obj=new Scanner(System.in);
+		range=obj.nextInt();
+		for(num=1;num<=range;num++)
+		{
+			if(num<6)
+			System.out.print(num+"_");
+			else
+				System.out.println(num);
+		}
+	}
+
+}
