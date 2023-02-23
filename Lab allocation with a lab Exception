@@ -1,0 +1,66 @@
+QUESTION:
+There are 3 labs in the CSE department are L1, L2, and L3 with a seating capacity of x, y, and z respectively. One of the 3 labs has been allocated for ACE training. Out of the available labs, find the lab which has minimal seating capacity.
+Input format:
+Input consists of 3 integers and a string
+The first input denotes the seating capacity of L1(x)
+The second input denotes the seating capacity of L2Yes
+The third input denotes the seating capacity of L3(z)
+The fourth input denotes the lab which is allocated for ACE training
+Output format:
+Print the minimal seating capacity lab amongst the available labs.
+Refer the Sample output for formatting
+Sample Input:
+30
+40
+20
+L3
+Sample Output:
+L1
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+         int num1,num2,num3;
+		Scanner obj=new Scanner(System.in);
+		num1=obj.nextInt();
+		num2=obj.nextInt();
+		num3=obj.nextInt();
+		String str=obj.next();
+		switch(str)
+		{
+		    case "L1":
+		        if(num2>num3)
+		        {
+		            System.out.println("L3");
+		        }
+		        else
+		        {
+		            System.out.println("L2");
+		        }
+		        break;
+		  case "L2":
+		      if(num1>num3)
+		        {
+		            System.out.println("L3");
+		        }
+		        else
+		        {
+		            System.out.println("L1");
+		        }
+		        break;
+		   case "L3":
+		       if(num1>num2)
+		        {
+		            System.out.println("L2");
+		        }
+		        else
+		        {
+		            System.out.println("L1");
+		        }
+		        break;
+		       
+		}
+   }
+}
