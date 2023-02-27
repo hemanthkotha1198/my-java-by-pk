@@ -1,0 +1,65 @@
+QUESTION:
+
+Dora is interested so much in gardening and she plants more trees in her garden. She plants trees in a rectangular fashion with the order of rows and columns and numbered the trees in row-wise order. She planted the mango tree only in a 1st row, 1st column and last column. So given the tree number, your task is to find whether the given tree is a mango tree or not? Write a program to check whether the given number is a mango tree or not.
+
+Input format:
+Input consists of 3 integers
+The first input denotes the number of rows
+The second input denotes the number of columns
+The third input denotes the tree number
+
+Output format:
+If the given number is a mango tree, print "Yes". Otherwise, print "No"
+Refer the sample output for formatting
+
+Sample Input:
+5
+5
+
+11
+
+
+
+Sample Output:
+
+Yes
+import java.util.Scanner;
+class Main
+{
+public static void main(String args[])
+{
+int rows,cols,treenum;
+		Scanner obj=new Scanner(System.in);
+		rows=obj.nextInt();
+		cols=obj.nextInt();
+		treenum=obj.nextInt();
+		int total_trees=rows*cols;
+		int last_row=total_trees-cols;
+	if((treenum>0)&&(treenum<total_trees))
+	{
+	    if((treenum>0)&&(treenum<=rows))
+	    {
+	        System.out.println("Yes");
+	    }
+	    else if(treenum%rows==1)
+	    {
+	        System.out.println("Yes");
+	    }
+	    else if((treenum>=last_row)&&(treenum<=total_trees))
+	    {
+	        System.out.println("Yes");    
+	    }
+	    else if ((rows<=2)||(cols<=2))
+	    {
+	        System.out.println("Yes");
+	    }
+	    else
+	    {
+	         System.out.println("No");  
+	    }	    
+	}
+	else{
+	    System.out.println("No");
+	}
+}
+}
