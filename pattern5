@@ -1,0 +1,50 @@
+QUESTION:
+Write a program to print the given below pattern.
+
+
+
+Input format:
+
+The input containing an integer which denotes the value of 'n'
+
+
+
+Output format:
+
+Refer the sample output for formatting. There is a trailing space at the end of each line.
+
+
+Sample Input:
+
+5
+
+
+
+Sample Output:
+
+*   *
+ * * 
+  *  
+ * * 
+*   *
+
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+    int n,i,j;
+    Scanner sc= new Scanner(System.in);
+    n=sc.nextInt();
+    int k=2*n-1;
+    for(i=1;i<=k;i++)
+    {
+        for(j=1;j<=k;j++)
+        {
+            if(j==i||j==k-i+1)
+            System.out.print("* ");
+            
+        }System.out.println();
+    }
+	}
+}
