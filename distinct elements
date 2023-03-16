@@ -1,0 +1,61 @@
+Write a program to find the number of distinct elements in a sorted array.
+
+ 
+
+Input Format:
+
+Input consists of n+1 integers. The first integer corresponds to n, the number of elements in the array. The next n integers correspond to the elements in the array. Assume that the maximum value of n is 15.
+
+ 
+
+Output Format:
+
+Output consists of a single integer which corresponds to the number of distinct elements in the array.
+
+ 
+
+Sample Input:
+
+5
+
+3
+
+3
+
+3
+
+78
+
+90
+
+ Sample Output:
+
+3
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+       
+		int n,i,a = 0,b=0;
+		Scanner Sc= new Scanner (System.in);
+		n= Sc.nextInt();
+		int arr[]=new int[n];
+	//	int arr1[]=new int[n];
+		for(i=0;i<n;i++)
+		{
+			arr[i]= Sc.nextInt();
+		}
+		for(i=0;i<n;i++)
+		{
+		if(a!=arr[i])
+		{
+		    b++;
+		}
+		a=arr[i];
+		}
+		System.out.println(b);
+    }
+}
