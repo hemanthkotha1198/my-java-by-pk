@@ -1,0 +1,46 @@
+Write a program to compute a^n (a power n) using recursion.
+ 
+Input and Output Format:
+ 
+
+Input consists of 2 integers.
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+ 
+
+Sample Input and Output:
+Enter the value of a
+2
+Enter the value of n
+8
+The value of 2 power 8 is 256
+
+import java.util.*;
+public class Main{
+
+	public static void main(String[] args) {
+		
+ int a,n; Scanner sc= new Scanner(System.in);
+ System.out.println("Enter the value of a");
+ a= sc.nextInt();
+ System.out.println("Enter the value of n");
+ n= sc.nextInt();
+ System.out.println("The value of "+a+" power "+n+" is "+power(a,n));
+	}
+ public static int power(int a,int n)
+ { 
+	 if(n==0)
+	 {
+		 return 1;
+	 }
+	 else if(n==1)
+	 {
+		 return a;
+	 }
+	 else {
+			 return a*power(a,n-1);
+		 
+	 }
+
+ }
+}
