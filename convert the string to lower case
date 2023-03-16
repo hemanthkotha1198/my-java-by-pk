@@ -1,0 +1,28 @@
+Write a program to convert the string to lower case.
+
+ Input and Output Format:
+
+Input consists of a string. Assume that the input string consists of only letters and the maximum length of the string is 20.
+
+Refer sample input and output for formatting specifications.
+
+All text in bold corresponds to input and the rest corresponds to output.
+
+ Sample Input and Output:
+
+AmphiSoft
+
+The output string is amphisoft
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+	System.out.println("The output string is "+s.toLowerCase());
+	}
+}
