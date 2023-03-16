@@ -1,0 +1,47 @@
+A number is said to be valid iff it is divisible by 8.
+
+Write a C program that allows the user to keep entering numbers as long as the input is valid and also displays a count of the valid numbers entered using a while loop.
+
+Input Format:
+
+Input consists of integers.
+
+Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input and Output:
+
+8
+
+16
+
+96
+
+6
+
+The number of valid numbers entered is 3
+
+import java.util.*;
+class Main
+{
+public static void main(String[] args)
+{
+int n,count=0;
+Scanner obj= new Scanner(System.in);
+while(true)
+{
+n=obj.nextInt();
+if(n%8==0)
+{
+count++;
+}
+else
+{
+break;
+}
+}
+System.out.printf("The number of valid numbers entered is %d",count);
+}}
