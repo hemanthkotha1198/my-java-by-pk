@@ -1,0 +1,48 @@
+A special school is run by an NGO for kids with Dyslexia. As we all know these children will start writing the letters backwards or in reverse. Once special care is taken to correct this issue and once they are introduced to words, they will start writing the words in reverse. The teachers do not want to discourage the children at the start itself and they have decided to mark the works written in reverse also as correct. Can you please help the teacher in correcting the answer sheets by writing a C program?
+
+Write a C program to check whether the second word is the reverse of first word. Do not use strrev function.
+
+Input Format:
+
+Input consists of 2 strings. Assume that the maximum length of the string is 50.
+
+Output Format:
+
+Refer sample input and output for formatting specifications.
+
+Sample Input and Output 1:
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+Excellent
+
+tnellecxE
+
+It is correct
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+     Scanner obj= new Scanner(System.in);
+	String str1=obj.next();
+	String str2=obj.next(); 
+    char ch[]=str2.toCharArray();  
+    String rev="";  
+    for(int i=ch.length-1;i>=0;i--){  
+        rev+=ch[i];  
+    }  
+//  System.out.println(rev) ;
+	if(rev.matches(str1))
+	{
+    System.out.println("It is correct");
+	}
+	else
+	{
+	     System.out.println("It is wrong");
+	}
+        //fill the code;
+        //System.out.printf("The length of word %s is %d",str,str.length());
+    }
+}
