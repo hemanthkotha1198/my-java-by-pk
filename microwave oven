@@ -1,0 +1,73 @@
+QUESTION:
+
+A microwave oven manufacturer recommends that when heating two items, add 50% to the
+
+heating time, and when heating three items double the heating time. Heating more than
+
+three items at once is not recommended. Write a program to find out the recommended heating time.
+
+
+
+Input format:
+
+The first input containing an integer which denotes the number of items
+
+The second input containing the floating point number which denotes the single item heating time.
+
+
+
+Output format:
+
+Print the recommended heating time in floating point with 2 decimal places.
+
+If the number of items is more than three, print "Number of items is more" 
+
+Refer the sample output for formatting
+
+
+
+Sample Input:
+
+2
+
+5.0
+
+
+
+Sample Output:
+
+7.50
+
+import java.util.Scanner;
+class Main
+{
+public static void main(String args[])
+{
+int count_item;
+float heat_time;
+double total_time=0;
+Scanner obj=new Scanner(System.in);
+count_item=obj.nextInt();
+heat_time=obj.nextFloat();
+if(count_item>3)
+{
+    System.out.println("Number of items is more");
+}
+else
+{
+    if(count_item==1)
+    {
+       total_time=heat_time; 
+    }
+    else if(count_item==2)
+    {
+       total_time=heat_time*1.5;
+    }
+    else if(count_item==3)
+    {
+        total_time=heat_time*2;
+    }
+    System.out.println(total_time);
+}
+}
+}
