@@ -1,0 +1,49 @@
+Write a program to find the sum of digits in a number using recursion.
+ 
+Input and Output Format:
+
+ 
+
+Input consists of a nonnegative integer.
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+ 
+Sample Input and Output:
+
+Enter the value of n
+432
+The sum of digits in 432 is 9
+
+import java.util.*;
+public class Main{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the value of n ");
+		num=sc.nextInt();
+		System.out.printf("The sum of digits in %d is %d",num,sum(num));
+	}
+	public static int sum(int num)
+	{  
+		
+		 if(num==0)
+		 {
+		     return 0;
+		 }
+		 else
+		 {
+
+		 		return ((num%10)+sum(num/10));		     
+		
+		 }
+		 
+		  
+		 
+	//	return sum(a);		     
+		
+
+	}
+
+}
