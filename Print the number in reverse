@@ -1,0 +1,48 @@
+Write a Java program to print all numbers between a and b (a and b inclusive) using while loop.
+
+Input Format:
+
+Input consists of 2 integers. The first integer corresponds to a and the second integer corresponds to b. Assume a>=b.
+
+Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input :
+
+10
+
+4
+
+Sample Output:
+
+0
+
+9
+
+8
+
+7
+
+6
+
+5
+
+4
+
+import java.util.*;
+class Main
+{
+public static void main(String[] args)
+{
+int start,end;
+Scanner obj =new Scanner(System.in);
+start=obj.nextInt();
+end=obj.nextInt();
+while(end<=start)
+{
+System.out.println(start);
+start--;
+}}}
