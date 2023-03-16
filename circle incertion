@@ -1,0 +1,78 @@
+QUESTION:
+
+Write a program to determines if two circles intersect each other.
+
+
+
+Input format:
+
+Input consists of 6 integers
+
+The first input containing an integer which denotes the x-coordinate of the center of the first
+
+circle. 
+
+The second input containing an integer which denotes the y-coordinate of the center of the
+
+first circle. 
+
+The third input containing an integer which denotes the radius of the first circle. 
+
+The next 3 integers denote the x,y, and radius of the second circle.
+
+
+Output format:
+
+The output consists of a single line which contains any of these 3 strings.
+
+“Tangential”, “Overlap”, “Do not overlap”
+
+
+Sample Input:
+
+10
+
+10
+
+3
+
+10
+
+6
+
+1
+
+
+Sample Output:
+
+Tangential
+
+import java.util.*;
+class Main
+{
+public static void main(String args[])
+{
+int x1,y1,r1,x2,y2,r2;
+		Scanner obj=new Scanner(System.in);
+		x1=obj.nextInt();
+		y1=obj.nextInt();
+		r1=obj.nextInt();
+		x2=obj.nextInt();
+		y2=obj.nextInt();
+		r2=obj.nextInt();
+double sum_rad,dis;
+sum_rad=r1+r2;
+dis=Math.sqrt(((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)) );
+if(dis==sum_rad)
+{
+    System.out.println("Tangential");
+}
+else if(dis<sum_rad)
+{
+    System.out.println("Overlap");
+}
+else if(dis>sum_rad)
+{
+    System.out.println("Do not overlap");
+}
+}}
