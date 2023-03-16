@@ -1,0 +1,24 @@
+n the certain area there was a camp of polio drops team. They need to search every baby in the particular area. They want to find the baby and take out the baby for polio drops. Help them to find the baby to avoid polio attacks. (remove the occurrence of “the” word from entered string).
+
+Sample Input and Output:
+
+remove the occurrence of the word from entered string
+
+remove occurrence of word from entered string
+
+ [Hint: To get a whole sentence use the following statement:
+
+scanf("%[^\n]",a);
+
+]
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {Scanner obj= new Scanner(System.in);
+	String str=obj.nextLine();
+    System.out.println(str.replace("the",""));
+    }
+}
