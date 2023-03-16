@@ -1,0 +1,76 @@
+QUESTION:
+
+Write a program to print the given below pattern.
+
+
+
+Input format:
+
+The input containing an integer which denotes the value of 'n'
+
+
+
+Output format:
+
+Refer the sample output for formatting. There is a trailing space at the end of each line.
+
+
+
+Sample Input:
+
+4
+
+
+
+Sample Output:
+
+1112
+
+3222
+
+3334
+
+5444
+
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+        int n;Scanner sc= new Scanner(System.in);
+        n=sc.nextInt();
+        int i,j,count=0,range=0;
+        for(i=0;i<n;i++)
+        { count++;
+            for(j=0;j<n;j++)
+            {
+                if(i%2==0)
+                {
+                    if(j!=n-1)
+                    {
+                        System.out.print(count);
+                    }
+                    else
+                    {
+                        range=count+1;
+                        System.out.print(range);
+                    }
+                }
+                else
+                {
+                    if(j==0)
+                    {
+                       range=count+1;
+                        System.out.print(range);  
+                    }
+                    else
+                    {
+                      System.out.print(count);  
+                    }
+                }
+                
+            }
+            System.out.println();
+        }
+	}
+}
