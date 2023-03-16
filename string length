@@ -1,0 +1,24 @@
+Write a  program to find the length of the given string using string library functions:
+
+Input Format:
+
+Input consist of 1 string.
+Sample Input & Output:
+
+Face
+
+The length of Face is 4
+
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+		// fill your code
+		Scanner obj= new Scanner(System.in);
+	String str=obj.nextLine();
+System.out.println("The length of "+str+" is "+str.length());
+		
+		
+	}
+}
