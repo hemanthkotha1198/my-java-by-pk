@@ -1,0 +1,43 @@
+QUESTION:
+
+Write a program to generate the first n terms in the series --- 3, 9, 27, 81,...,...
+
+
+
+Input format:
+
+The input containing an integer which denotes 'n'
+
+
+
+Output format:
+
+Print the series and refer the sample output for formatting
+
+
+
+Sample Input:
+
+6
+
+
+
+Sample Output:
+
+3 9 27 81 243 729
+
+import java.util.Scanner;
+class Main
+{
+	public static void main(String args[])
+	{
+	int range,j=3;
+Scanner sc = new Scanner(System.in);
+range= sc.nextInt();
+for(int i=0;i<range;i++)
+{ System.out.print(j+" ");
+   j=j*3;
+  
+}
+	}
+}
