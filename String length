@@ -1,0 +1,34 @@
+Two people going to the theater to watch movie. They wants to buy ticket for the film. But they saw the queue standing there with rush. They planned to calculate the length of the queue to buy the tickets. Help them to find the length to get the tickets earlier and to enjoy the movie.(find the string length without using string library function.)
+
+Input format :
+
+Input consists of a string.
+
+Output format :
+
+Output consists of an integer saying the length of the given word.
+
+[ Refer sample Input and Output for further specifications ] 
+
+Sample Input and Output format :
+
+[ All text of bold corresponds to input ]
+
+Enter the word :
+
+Alice
+
+The length of word Alice is 5
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+     Scanner obj= new Scanner(System.in);
+	String str=obj.next();
+        //fill the code;
+        System.out.printf("The length of word %s is %d",str,str.length());
+    }
+}
