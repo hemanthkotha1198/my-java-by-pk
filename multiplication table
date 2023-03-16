@@ -1,0 +1,51 @@
+Write a  program to print the multiplication table of an integer n upto m rows using a while loop.
+
+Input Format:
+
+Input consists of 2 integers. The first integer corresponds to n. The second integer corresponds to m.
+
+ Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input and Output:
+
+Enter n
+
+5
+
+Enter m
+
+4
+
+The multiplication table of 5 is
+
+1*5=5
+
+2*5=10
+
+3*5=15
+
+4*5=20
+
+import java.util.*;
+class Main
+{
+public static void main(String[] args)
+{
+int n,m;
+Scanner obj= new Scanner(System.in);
+System.out.println("Enter n");
+n=obj.nextInt();
+System.out.println("Enter m");
+m=obj.nextInt();
+System.out.printf("The multiplication table of %d is\n",n);
+for(int i=1;i<=m;i++)
+{
+System.out.printf("%d*%d=%d",i,n,(i*n));
+System.out.println("");
+}
+
+}}
