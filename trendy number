@@ -1,0 +1,75 @@
+QUESTION:
+
+Write a program to check whether the given number is a trendy number or not.
+
+A number is said to be a trendy number if and only if it has 3 digits and the middle digit is divisible by 3.
+
+
+Input format:
+
+The input containing an integer 'n' which denotes the given number
+
+
+
+Output format:
+
+If the given number is a trendy number, then print "Trendy Number". Otherwise, print "Not a Trendy Number".
+
+Refer the sample output for formatting.
+
+
+
+Sample Input:
+
+
+791
+
+
+
+Sample Output:
+
+Trendy Number
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        int temp,r,num,count=0;
+        Scanner obj=new Scanner(System.in);
+        num=obj.nextInt();
+        temp=num;
+        while(num>0)
+        {
+          //  System.out.println("hii");
+            r=num%10;
+            num=num/10;
+            count++;
+            if(count==2)
+            {
+                continue;
+            }
+            else
+            {
+                break;
+            }
+           // System.out.println(r+" "+num);
+        }
+        if(count==2)
+        {
+            System.out.println("Trendy Number");
+        }
+        else
+        {
+                        System.out.println("Not a Trendy Number");
+        }
+    }
+}
+
+
+
+
+
+
+
+
