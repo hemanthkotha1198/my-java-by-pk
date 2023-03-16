@@ -1,0 +1,82 @@
+A symmetric matrix is a square matrix that is equal to its transpose.
+Write a C program to find whether a given matrix is a square matrix or not.
+Input Format:
+
+The input consists of (m*n+2) integers. The first integer corresponds to m, the number of rows in the matrix and the second integer corresponds to n, the number of columns in the matrix. The remaining integers correspond to the elements in the matrix. The elements are read in rowwise order, first row first, then second row and so on. Assume that the maximum value of m and n is 10.
+
+Output Format:
+Refer sample output for details.
+
+Sample Input 1:
+
+2
+
+2
+
+4 5
+
+5 4
+
+Sample Output 1:
+
+Symmetric
+
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String args[])
+	{
+	int rows,cols,i,j,a=0;
+	Scanner Sc= new Scanner(System.in);
+	rows=Sc.nextInt();
+	cols=Sc.nextInt();
+	int [][] arr1= new int[rows][cols];
+	int [][] arr= new int[rows][cols];
+	for(i=0;i<rows;i++)
+		for(j=0;j<cols;j++)
+		{
+		    {
+			    arr[i][j]= Sc.nextInt();
+		    }		    
+		}
+			for(i=0;i<rows;i++) {
+		for(j=0;j<cols;j++)
+		{
+		    arr1[j][i]=arr[i][j];
+//			    System.out.print(arr1[i][j]+" ");
+		}
+//	    System.out.println();
+		}
+			for(i=0;i<rows;i++) {
+		for(j=0;j<cols;j++)
+		{
+		    if(arr1[i][j]!=arr[i][j])
+            {
+                a=1;
+            }
+		}
+
+		}
+		if(a==0)
+		{
+		    System.out.println("Symmetric");
+		}
+		else
+		{
+		    System.out.println("Not Symmetric");
+		}
+	/*for(i=0;i<rows;i++)
+	{ a=0;
+		for(j=0;j<cols;j++)
+		{
+		    if(a<arr[i][j])
+		    {
+		    	a=arr[i][j];
+		    }
+
+		}
+	System.out.println(a);
+	}*/
+
+	}
+}
