@@ -1,0 +1,47 @@
+Write a program to find the nth term in the Fibonocci series using recursion.
+Note that the first 2 terms in the Fibonocci Series are 0 and 1.
+ 
+Input and Output Format:
+ 
+
+Input consists of an integer.
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+ 
+Sample Input and Output:
+Enter the value of n
+4
+The term 4 in the fibonocci series is 2
+
+
+import java.util.*;
+public class Main {
+
+	public static void main(String[] args) {
+
+		int num;
+		
+		Scanner sc=new Scanner(System.in);
+		num=sc.nextInt();
+		System.out.println("Enter the value of n");
+		System.out.println("The term "+num+" in the fibonocci series is "+feb(num));
+	}
+	public static int feb(int a)
+	{
+		int num1=0,num2=1;
+		if(a==1)
+		{
+			return num1;
+		}
+		else if(a==2)
+		{
+			return num2;
+		}
+		else 
+		{
+			return feb(a-1)+feb(a-2);
+		}
+
+	}
+
+}
