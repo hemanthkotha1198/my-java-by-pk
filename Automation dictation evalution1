@@ -1,0 +1,42 @@
+In these days kids are introduced to computers at a very early age and in some schools the dictation test is conducted using computers. The teachers found it a bit difficult to evaluate these tests and they requested the school management to lessen their burden by automating this task. The 12th class students are learning C programming and they took up the task of automating the dictation evaluation. Can you please help them out?
+
+Write a C program to compare 2 strings using strcmp function.
+
+Input Format:
+
+Input consists of a two strings. Assume that the maximum length of the string is 50 and it contains only alphabets.
+
+Output Format:
+
+Refer sample input and output for formatting specifications.
+
+Sample Input and Output 1:
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+Excellent
+
+Excellent
+
+It is correct
+
+
+import java.util.Scanner;
+class Main
+{
+    public static void main(String args[])
+    {
+        //fill the code;
+        Scanner obj= new Scanner(System.in);
+	String str1=obj.next();
+	String str2=obj.next();
+	if(str1.matches(str2))
+	{
+	    System.out.println("It is correct");
+	}
+	else
+	{
+	    System.out.println("It is wrong");	    
+	}
+    }
+}
