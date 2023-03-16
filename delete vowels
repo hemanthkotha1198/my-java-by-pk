@@ -1,0 +1,42 @@
+Write a program to delete all vowels present in a string.
+
+Input and Output Format:
+
+Input consists of a string. Assume that all characters in the string are lowercase letters and the maximum length of the string is 200.
+
+Refer sample input and output for formatting specifications.
+
+All text in bold corresponds to input and the rest corresponds to output. 
+
+Sample Input and Output:
+
+amphisoft
+
+The output string is mphsft
+
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args)
+	{
+	       String str="";
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		int len=s.length();
+		for (int i = 0; i < len; i++) {
+			if (s.charAt(i) == 'a' || s.charAt(i) == 'e'
+				|| s.charAt(i) == 'i' || s.charAt(i) == 'o'
+				|| s.charAt(i) == 'u' ) {
+				System.out.print("");
+			}
+			else {
+//			    arr[]=s.charAt(i);
+			   	str=str+s.charAt(i);
+			}
+		}
+		System.out.println("The output string is "+str);
+	//	System.out.println("The output string is "+s);
+	}
+}
